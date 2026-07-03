@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timetable – Student Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-brand">📚 StudentHub</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="notices.html">Notices</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">🌙 Dark Mode</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page">
+
+    <div class="page-header">
+      <h1>Timetable</h1>
+      <p>Weekly class schedule – Semester 3</p>
+    </div>
+
+    <!-- Today highlight banner -->
+    <div id="todayBanner" class="today-banner"></div>
+
+    <div class="timetable-wrapper">
+      <table id="timetableTable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th data-day="1">Monday</th>
+            <th data-day="2">Tuesday</th>
+            <th data-day="3">Wednesday</th>
+            <th data-day="4">Thursday</th>
+            <th data-day="5">Friday</th>
+          </tr>
+        </thead>
+        <tbody id="timetableBody"></tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <script src="js/timetable.js"></script>
+</body>
+</html>

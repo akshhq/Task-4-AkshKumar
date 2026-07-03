@@ -1,0 +1,17 @@
+{
+  "name": "student-dashboard-api",
+  "version": "4.0.0",
+  "description": "Student Dashboard API – DecodeLabs Internship Project 4",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aksh Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}

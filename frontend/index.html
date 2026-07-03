@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – Student Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-brand">📚 StudentHub</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="notices.html">Notices</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">🌙 Dark Mode</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page">
+
+    <div class="welcome-banner">
+      <h2>Welcome back, Aksh Kumar 👋</h2>
+      <p>Here's a live overview from the database</p>
+      <div class="meta">
+        <span>🎓 B.Sc. Computer Science</span>
+        <span>📅 Semester 5</span>
+        <span>🆔 Roll No: 24BCS25709</span>
+      </div>
+    </div>
+
+    <div class="stat-cards">
+      <div class="stat-card">
+        <span class="icon">📅</span>
+        <span class="label">Classes Today</span>
+        <span class="value" id="classCount">—</span>
+        <span class="sub" id="todayLabel">Loading...</span>
+      </div>
+      <div class="stat-card">
+        <span class="icon">📝</span>
+        <span class="label">Assignments</span>
+        <span class="value" id="assignmentCount">—</span>
+        <span class="sub">Total recorded</span>
+      </div>
+      <div class="stat-card">
+        <span class="icon">🔔</span>
+        <span class="label">Latest Notice</span>
+        <span class="value" style="font-size:0.95rem;" id="latestNotice">—</span>
+      </div>
+    </div>
+
+    <!-- Today's Classes List -->
+    <div class="card classes-card" id="todayClassesCard">
+      <div style="margin-bottom:12px;">
+        <strong id="todayClassesTitle">Today's Classes</strong>
+      </div>
+      <div id="todayClassesList"></div>
+    </div>
+
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

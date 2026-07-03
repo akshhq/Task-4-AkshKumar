@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignments – Student Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-brand">📚 StudentHub</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="notices.html">Notices</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">🌙 Dark Mode</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page">
+
+    <div class="page-header">
+      <h1>Assignments</h1>
+      <p>Add and track assignments from the database</p>
+    </div>
+
+    <!-- Add Assignment Form -->
+    <div class="form-card">
+      <h2>➕ Add New Assignment</h2>
+      <form id="assignmentForm">
+        <div class="form-row">
+          <input type="text" id="title"   placeholder="Assignment Title" required />
+          <input type="date" id="dueDate" required />
+          <select id="status">
+            <option value="Pending">Pending</option>
+            <option value="Submitted">Submitted</option>
+            <option value="Overdue">Overdue</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Add Assignment</button>
+        </div>
+      </form>
+      <p id="formMsg" style="margin-top:10px; font-size:0.85rem;"></p>
+    </div>
+
+    <!-- Assignment Cards -->
+    <div class="cards" id="assignmentsContainer">
+      <p class="state-msg">⏳ Loading assignments...</p>
+    </div>
+
+  </main>
+
+  <script src="js/assignments.js"></script>
+</body>
+</html>
