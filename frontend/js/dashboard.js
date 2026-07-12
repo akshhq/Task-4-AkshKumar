@@ -1,6 +1,6 @@
 // js/dashboard.js
 
-const API = "http://localhost:3000";
+const API = "https://task-4-akshkumar.onrender.com";
 
 // =====================
 // Timetable Data – B.Sc.(H) CS Sem IV Section A

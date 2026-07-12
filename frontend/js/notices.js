@@ -1,6 +1,6 @@
 // js/notices.js
 
-const API = "http://localhost:3000";
+const API = "https://task-4-akshkumar.onrender.com";
 
 // =====================
 // Dark Mode & Nav (shared)
